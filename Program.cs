@@ -3,45 +3,98 @@
 // запрашивает целые числа с консоли. Программа
 // завершается при вводе символа ‘q’ или при вводе
 // числа, сумма цифр которого четная.
-// Задача 2: Задайте массив заполненный случайными
+// 
+
+// using System;
+
+// class Program
+// {
+//     static void Main(string[] args)
+//     {
+//         while (true)
+//         {
+//             Console.WriteLine("Enter a number the sum of the digits of which must be even, or 'q' to exit: ");
+//             string input = Console.ReadLine();
+
+//             if (input == "q")
+//             {
+//                 break;
+//             }
+
+//             int number = Convert.ToInt32(input);
+//             int sum = 0;
+
+//             // Вычисляем сумму всех цифр числа
+//             while (number != 0)
+//             {
+//                 sum += number % 10; // Получаем последнюю цифру числа и добавляем к сумме
+//                 number /= 10; // Удаляем последнюю цифру числа
+//             }
+
+//             if (sum % 2 == 0)
+//             {
+//                 Console.WriteLine("The sum of the digits is even");
+//                 break;
+//             }
+//         }
+//     }
+// }
+
+
+//Задача 2: Задайте массив заполненный случайными
 // трёхзначными числами. Напишите программу,
 // которая покажет количество чётных чисел в
 // массиве.
+
+
 // Задача 3: Напишите программу, которая перевернёт
 // одномерный массив (первый элемент станет
 // последним, второй – предпоследним и т.д.)
 
-using System;
+// int ArrayToInteger(int[] array)
+// {
+//     int number = 0;
+//     for (int i = array.Length-1; i >= 0; i--)
+//     {
+//         number = number * 10 + array[i];
+//     }
 
-class Program
-{
-    static void Main(string[] args)
-    {
-        while (true)
-        {
-            Console.WriteLine("Enter a number the sum of the digits of which must be even, or 'q' to exit: ");
-            string input = Console.ReadLine();
+//     return number;
 
-            if (input == "q")
-            {
-                break;
-            }
+// }
 
-            int number = Convert.ToInt32(input);
-            int sum = 0;
+// int[] CreateArrayRndInt(int size, int min, int max)
+// {
+//     int[] array = new int[size];
+//     Random rnd = new Random();
 
-            // Вычисляем сумму всех цифр числа
-            while (number != 0)
-            {
-                sum += number % 10; // Получаем последнюю цифру числа и добавляем к сумме
-                number /= 10; // Удаляем последнюю цифру числа
-            }
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         array[i] = rnd.Next(min, max);
+//     }
+//     return array;
+// }
 
-            if (sum % 2 == 0)
-            {
-                Console.WriteLine("The sum of the digits is even");
-                break;
-            }
-        }
-    }
-}
+// void PrintArray(int[] array)
+
+
+// {
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write($"{array[i]} ");
+//     }
+// }
+
+// int minimum = 0;
+// int maximum = 10;
+
+// Console.WriteLine("input size of the array: ");
+// int count = Convert.ToInt32(Console.ReadLine());
+
+// int[] arrayMain = CreateArrayRndInt(count, minimum, maximum);
+// PrintArray(arrayMain);
+
+// Console.WriteLine();
+// Console.WriteLine(ArrayToInteger(arrayMain));
+
+
