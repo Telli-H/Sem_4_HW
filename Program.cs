@@ -46,6 +46,63 @@
 // которая покажет количество чётных чисел в
 // массиве.
 
+// using System;
+
+// class Program
+// {
+//     static int[] CreateArrayRndInt(int size, int min, int max)
+//     {
+//         int[] array = new int[size];
+//         Random rnd = new Random();
+
+//         for (int i = 0; i < array.Length; i++)
+//         {
+//             array[i] = rnd.Next(min, max);
+//         }
+//         return array;
+//     }
+
+//     static void PrintArray(int[] array)
+//     {
+//         foreach (int num in array)
+//         {
+//             Console.Write($"{num} ");
+//         }
+//         Console.WriteLine();
+//     }
+
+//     static int CountEvenNumbers(int[] array)
+//     {
+//         int count = 0;
+//         foreach (int num in array)
+//         {
+//             if (num % 2 == 0)
+//             {
+//                 count++;
+//             }
+//         }
+//         return count;
+//     }
+
+//     static void Main(string[] args)
+//     {
+//         int minimum = 100;
+//         int maximum = 1000;
+
+//         Console.WriteLine("Enter the size of the array: ");
+//         int count = Convert.ToInt32(Console.ReadLine());
+
+//         int[] arrayMain = CreateArrayRndInt(count, minimum, maximum);
+//         Console.WriteLine("Generated Array:");
+//         PrintArray(arrayMain);
+
+//         int evenCount = CountEvenNumbers(arrayMain);
+//         Console.WriteLine($"Number of even numbers in the array: {evenCount}");
+//     }
+// }
+
+
+
 
 // Задача 3: Напишите программу, которая перевернёт
 // одномерный массив (первый элемент станет
